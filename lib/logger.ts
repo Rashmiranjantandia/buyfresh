@@ -26,7 +26,7 @@ export const logger = {
         name: error.name,
         message: error.message,
         // Include Mongoose/MongoDB specific error codes if present
-        ...(error as Record<string, unknown>),
+        ...(error instanceof Error ? { message: error.message, stack: error.stack } : {}),
       });
     } else {
       console.error(base, error ?? '');

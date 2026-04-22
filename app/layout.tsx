@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     'Shop fresh fruits, vegetables, and daily essentials at unbeatable prices. Fast delivery across India.',
   keywords: 'grocery, online grocery, fresh vegetables, Indian grocery, buy groceries online, BuyFresh',
   icons: {
-    icon: '/favicon.png',
-    shortcut: '/favicon.png',
-    apple: '/favicon.png',
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/favicon.ico',
   },
 };
 

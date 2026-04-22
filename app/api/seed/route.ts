@@ -272,7 +272,7 @@ export async function POST() {
         success: true,
         message: `✅ Database seeded with ${products.length} realistic Indian grocery products!`,
         count: products.length,
-        categories: [...new Set(indianGroceryProducts.map(p => p.category))],
+        categories: Array.from(new Set(indianGroceryProducts.map(p => p.category))),
       },
       { status: 201 }
     );
